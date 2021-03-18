@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/test', function () {
-    return 234435457;
+    return 'gergrg';
 });
