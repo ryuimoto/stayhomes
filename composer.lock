@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa60de60de6a382e42b4f73eb88cf5ad",
+    "content-hash": "693fc4a4753268e959b78b11cfd35240",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -532,6 +532,59 @@
                 "laravel"
             ],
             "time": "2021-03-16T14:18:55+00:00"
+        },
+        {
+            "name": "laravel/helpers",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/helpers.git",
+                "reference": "febb10d8daaf86123825de2cb87f789a3371f0ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/helpers/zipball/febb10d8daaf86123825de2cb87f789a3371f0ac",
+                "reference": "febb10d8daaf86123825de2cb87f789a3371f0ac",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.8.0|^6.0|^7.0|^8.0",
+                "php": "^7.1.3|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0|^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Dries Vints",
+                    "email": "dries.vints@gmail.com"
+                }
+            ],
+            "description": "Provides backwards compatibility for helpers in the latest Laravel release.",
+            "keywords": [
+                "helpers",
+                "laravel"
+            ],
+            "time": "2021-02-16T15:27:11+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1067,6 +1120,66 @@
                 "php"
             ],
             "time": "2020-12-20T10:01:03+00:00"
+        },
+        {
+            "name": "olssonm/l5-very-basic-auth",
+            "version": "v6.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/olssonm/l5-very-basic-auth.git",
+                "reference": "e643612fc9fdd9fbd2286ab99c004d33633ccc25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/olssonm/l5-very-basic-auth/zipball/e643612fc9fdd9fbd2286ab99c004d33633ccc25",
+                "reference": "e643612fc9fdd9fbd2286ab99c004d33633ccc25",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0|^7.0|^8.0",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "laravel/helpers": "^1.1",
+                "orchestra/testbench": ">=3.4.0",
+                "phpunit/phpunit": "^7.5|^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Olssonm\\VeryBasicAuth\\VeryBasicAuthServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Olssonm\\VeryBasicAuth\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Olsson",
+                    "email": "contact@marcusolsson.me",
+                    "homepage": "https://marcusolsson.me"
+                }
+            ],
+            "description": "Stateless HTTP basic auth without the need for a database. For Laravel 5",
+            "homepage": "https://github.com/olssonm/l5-very-basic-auth",
+            "keywords": [
+                "Authentication",
+                "http basic auth",
+                "laravel 5",
+                "olssonm"
+            ],
+            "time": "2020-12-04T09:47:18+00:00"
         },
         {
             "name": "opis/closure",

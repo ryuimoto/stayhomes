@@ -11,10 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return "ぐへへのワールド";
-});
 
-Route::get('/test', function () {
-    return 'gerrerrefgれedfggergergergerggrg';
+
+Route::group(['middleware' => 'auth.very_basic'], function() {
+    
+    Route::get('/', function () {
+        return "ぐへへのワールド";
+    });
+    
+    Route::get('/test', function () {
+        return 'gerrerrefgれedfggergergergerggrg';
+    });
+
 });
