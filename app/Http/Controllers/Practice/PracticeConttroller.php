@@ -11,4 +11,9 @@ class PracticeConttroller extends Controller
     {
         return view('practice.list');
     }
+    
+    public function videoCall()
+    {
+        return view('practice.video_call');
+    }
 }

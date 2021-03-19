@@ -14,10 +14,11 @@
 
 
 Route::group(['middleware' => 'auth.very_basic'], function() {
-    
-    Route::get('/', function () {
-        return "ぐへへのワールド";
-    });
-
     Route::get('/','Practice\PracticeConttroller@index');
+
+    Route::prefix('practice')->group(function () {
+        Route::get('video_call','Practice\PracticeConttroller@videoCall')->name('video_call');
+    });
+    
+
 });
