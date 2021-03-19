@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return "ハローワールド";
+    return "heローワールド";
 });
 
 Route::get('/test', function () {
